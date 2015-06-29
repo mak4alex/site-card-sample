@@ -1,12 +1,15 @@
 {
-	"name": "meanjs",
-	"description": "Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js.",
-	"version": "0.3.3",
+	"name": "site-card-sample",
+	"description": "Site card sample building on Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js.",
+	"keywords": ["site card", "sapmle", "mean"],
+  	"version": "1.0.0",
 	"private": false,
+  	"preferGlobal": false,
 	"author": "https://github.com/meanjs/mean/graphs/contributors",
+  	"main": "server.js",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/meanjs/mean.git"
+		"url": "https://github.com/mak4alex/site-card-sample.git"
 	},
 	"engines": {
 		"node": ">=0.10.28",
@@ -70,5 +73,6 @@
 		"karma-chrome-launcher": "~0.1.2",
 		"karma-firefox-launcher": "~0.1.3",
 		"karma-phantomjs-launcher": "~0.1.2"
-	}
+	},
+  "license": "MIT"
 }
