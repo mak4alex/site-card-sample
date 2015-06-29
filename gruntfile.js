@@ -52,7 +52,7 @@ module.exports = function(grunt) {
 			},
 			mochaTests: {
 				files: watchFiles.mochaTests,
-				tasks: ['test:server'],
+				tasks: ['test:server']
 			}
 		},
 		jshint: {
@@ -92,6 +92,7 @@ module.exports = function(grunt) {
 			dev: {
 				script: 'server.js',
 				options: {
+					ignore: ['./node_modules/**', './public/lib/**'],
 					nodeArgs: ['--debug'],
 					ext: 'js,html',
 					watch: watchFiles.serverViews.concat(watchFiles.serverJS)
@@ -119,7 +120,7 @@ module.exports = function(grunt) {
 			}
 		},
 		concurrent: {
-			default: ['nodemon', 'watch'],
+			default: ['nodemon:dev', 'watch'],
 			debug: ['nodemon', 'watch', 'node-inspector'],
 			options: {
 				logConcurrentOutput: true,
